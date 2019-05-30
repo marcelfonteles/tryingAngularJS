@@ -4,30 +4,29 @@ app.config(["$routeProvider", function($routeProvider) {
 
   $routeProvider
     .when('/', {
-     templateUrl: '/tryingAngularJS/app/templates/shared/index.html'
+     templateUrl: '/tryingAngularJS/shared_index.html'
     })
     .when('/first', {
-      templateUrl: '../templates/shared/first.html'
+      templateUrl: '/tryingAngularJS/first.html'
     })
     .when('/second', {
-      templateUrl: '../templates/shared/second.html'
+      templateUrl: '/tryingAngularJS/second.html'
     })
     .when('/welcome', {
-      templateUrl: '../templates/shared/welcome.html'
+      templateUrl: '/tryingAngularJS/welcome.html'
     })
     .when('/params/:id', {
-      templateUrl: '../templates/shared/params.html',
+      templateUrl: '/tryingAngularJS/params.html',
       controller: 'ParamsCtrl'
     })
     .when('/contacts/index', {
-      templateUrl: '../templates/contacts/index.html',
+      templateUrl: '/tryingAngularJS/contacts_index.html',
       controller: 'ContactsCtrl'
     })
     .when('/teste', {
       templateUrl: '/tryingAngularJS/teste.html'
     })
     .otherwise({
-      //templateUrl: '../templates/shared/404.html'
-      template: '<h1>Not</h1>'
+      templateUrl: '/tryingAngularJS/404.html'
     })
 }])
