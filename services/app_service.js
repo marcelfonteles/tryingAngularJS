@@ -23,6 +23,9 @@ app.config(["$routeProvider", function($routeProvider) {
       templateUrl: '../templates/contacts/index.html',
       controller: 'ContactsCtrl'
     })
+    .when('/teste', {
+      templateUrl: '../teste.html'
+    })
     .otherwise({
       //templateUrl: '../templates/shared/404.html'
       template: '<h1>Not Found!</h1>'
