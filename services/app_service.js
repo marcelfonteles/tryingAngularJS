@@ -4,7 +4,7 @@ app.config(["$routeProvider", function($routeProvider) {
 
   $routeProvider
     .when('/', {
-     templateUrl: '/tryingAngularJS/app/templates/shared/index.html'
+     templateUrl: 'https://raw.githubusercontent.com/marcelfonteles/tryingAngularJS/gh-pages/templates/shared/index.html'
     })
     .when('/first', {
       templateUrl: '../templates/shared/first.html'
