@@ -1,0 +1,9 @@
+div.jumbotron, div.container {
+  width: 60%;
+  margin: 5px auto 0 auto;
+  text-align: center;
+}
+
+input.form-control {
+  margin-bottom: 5px;
+}

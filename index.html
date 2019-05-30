@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app='app03'>
+<head>
+  <title>App 03</title>
+  <meta charset="utf-8">
+  <!-- Remover Cache -->
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- AngularJS-->
+  <script type="text/javascript" src="https://code.angularjs.org/1.7.8/angular.min.js"></script>
+  <script type="text/javascript" src='https://code.angularjs.org/1.7.8/angular-route.min.js'></script>
+
+  <script type="text/javascript" src='app.js'></script>
+  <!-- AngularJS Controollers-->
+  <script type="text/javascript" src='controllers/contactsCtrl.js'></script>
+  <script type="text/javascript" src='controllers/paramsCtrl.js'></script>
+  
+  <!-- AngularJS Services-->
+  <script type="text/javascript" src='services/app_service.js'></script>
+  <!-- Style -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">AngularJS - SPA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/#!/welcome">Welcome</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/#!/first">First</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/#!/second">Second</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/#!/contacts/index">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class='container' ng-view></div>
+</body>
+</html>
