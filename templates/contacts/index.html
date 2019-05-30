@@ -3,6 +3,8 @@
 </div>
 <div class='container'>
   <hr>
+  <search-result user-name="{{ usuario.nome }}"></search-result>
+  <hr>
   <button class='btn btn-success btn-block' ng-click='addContactBehave()' ng-if='!clickedContactButton'>Add Contact</button>
   <div ng-if='clickedContactButton'>
     <br>

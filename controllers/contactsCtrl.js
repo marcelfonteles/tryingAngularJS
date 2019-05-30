@@ -2,6 +2,9 @@ var app = angular.module('app03');
 
 app.controller('ContactsCtrl', ["$scope", "$http", "$log", "$routeParams", function($scope, $http, $log, $routeParams) {
   $scope.app = 'Welcome to Contacts Index';
+  $scope.usuario = {
+        nome: 'Marcel Vieira'
+  }
   $scope.clickedContactButton = false;
   $scope.contacts = [
                     {name: "Contact 1", phone: "+55 85 9 9999-9999", address: "Street 21, 60125"},
