@@ -24,6 +24,7 @@ app.config(["$routeProvider", function($routeProvider) {
       controller: 'ContactsCtrl'
     })
     .otherwise({
-      templateUrl: '../templates/shared/404.html'
+      //templateUrl: '../templates/shared/404.html'
+      template: '<h1>Not Found!</h1>'
     })
 }])
