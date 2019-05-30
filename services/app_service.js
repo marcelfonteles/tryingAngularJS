@@ -4,7 +4,8 @@ app.config(["$routeProvider", function($routeProvider) {
 
   $routeProvider
     .when('/', {
-     templateUrl: '../templates/shared/index.html'
+     templateUrl: '../templates/shared/index.html',
+     controller: 'AppCtrl'
     })
     .when('/first', {
       templateUrl: '../templates/shared/first.html'
