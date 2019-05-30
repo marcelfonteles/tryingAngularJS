@@ -24,7 +24,7 @@ app.config(["$routeProvider", function($routeProvider) {
       controller: 'ContactsCtrl'
     })
     .when('/teste', {
-      templateUrl: '/tryingAngularJS/app/teste.html'
+      templateUrl: '/tryingAngularJS/teste.html'
     })
     .otherwise({
       //templateUrl: '../templates/shared/404.html'
