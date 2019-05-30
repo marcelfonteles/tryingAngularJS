@@ -4,7 +4,7 @@ app.config(["$routeProvider", function($routeProvider) {
 
   $routeProvider
     .when('/', {
-     templateUrl: 'https://raw.githubusercontent.com/marcelfonteles/tryingAngularJS/gh-pages/templates/shared/index.html'
+     templateUrl: '/tryingAngularJS/app/templates/shared/index.html'
     })
     .when('/first', {
       templateUrl: '../templates/shared/first.html'
@@ -24,10 +24,10 @@ app.config(["$routeProvider", function($routeProvider) {
       controller: 'ContactsCtrl'
     })
     .when('/teste', {
-      templateUrl: '../teste.html'
+      templateUrl: '/tryingAngularJS/app/teste.html'
     })
     .otherwise({
       //templateUrl: '../templates/shared/404.html'
-      template: '<h1>Not Found!</h1>'
+      template: '<h1>Not</h1>'
     })
 }])
